@@ -4,7 +4,9 @@
   "description": "Scrape data from IMDB.",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "Kristjan Kirpu",
   "license": "MIT",
@@ -12,10 +14,12 @@
     "cheerio": "^1.0.0-rc.2",
     "querystring": "^0.2.0",
     "request": "^2.83.0",
-    "request-promise": "^4.2.2"
+    "request-promise": "^4.2.2",
+    "snyk": "^1.316.1"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/pepzwee/node-imdb-scraper.git"
-  }
+  },
+  "snyk": true
 }
